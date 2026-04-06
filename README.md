@@ -1,1 +1,3 @@
-# LAB5
+# Comparison of Accuracy and Feature Importances:
+
+The lab comparison reveals a clear trade-off between the complexity of Item_Name_reduced and the model's predictive power. Specifically, top_k = 3 outperformed both top_k = 5 and top_k = 6, achieving a peak accuracy of 0.3965, whereas top_k = 6 resulted in the lowest performance at 0.3890. Regarding Feature Importances, while numerical features like price_per_item and Delivery_Distance_km consistently remained the top contributors across all tests, the importance of the Item_Name_reduced feature was much higher and more effective at top_k = 3. In contrast, at top_k = 10, the increased number of categories introduced statistical noise, causing a shift where the model devalued the item names and relied almost exclusively on distance and pricing metrics.
